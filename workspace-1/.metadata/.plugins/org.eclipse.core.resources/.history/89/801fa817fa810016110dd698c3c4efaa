@@ -1,0 +1,18 @@
+package polyExample;
+
+public class PolymorphismExample {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Base first= new First();
+		Base second= new Second();
+		Base third= new Third();
+		
+		System.out.println("intrest rate of first "+first);
+		System.out.println("intrest rate of first "+second);
+		System.out.println("intrest rate of first "+third);
+	}
+
+}

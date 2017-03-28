@@ -1,0 +1,13 @@
+package object_example;
+
+public class ObjectExample {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

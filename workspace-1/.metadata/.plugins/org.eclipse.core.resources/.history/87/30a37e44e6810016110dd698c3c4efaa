@@ -1,0 +1,14 @@
+package constructor_example;
+
+public class ADD {
+	int a,b,c;
+	public int addition()
+	{
+	return(a+b+c);
+	}
+	ADD()
+	{
+		System.out.println("this is contructor");
+	}
+	}
+

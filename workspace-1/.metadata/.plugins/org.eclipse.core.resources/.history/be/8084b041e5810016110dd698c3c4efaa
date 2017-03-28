@@ -1,0 +1,6 @@
+package constructor_example;
+
+public class ADD() {
+	
+System.out.println("hi");
+}

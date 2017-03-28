@@ -1,0 +1,21 @@
+package ReadingExcel;
+
+import java.io.FileInputStream;
+
+public class ExcelImport {
+
+	public static void main(String[] args) {
+		
+		private void read() {
+
+        String Filepath= "C:\\Users\\VIJAY RAJ\\Desktop";
+        FileInputStream fs = new FileInputStream(Filepath);
+		WorkBook wb = new WorkBook.getWorkBook(fs);
+		Sheet sh =wb.getSheet("Sheet1");
+		int totalNoOfRows = sh.getRows();
+		int totalNoOfCols = sh.getColumns();
+	}
+	}
+}
+
+

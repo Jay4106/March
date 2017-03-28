@@ -1,0 +1,18 @@
+package constructor_example;
+
+public class ConstructorExample {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+
+          ADD vj = new ADD(2,2,2);
+          vj.addition();
+          
+          System.out.println(vj);
+          
+
+	}
+
+}

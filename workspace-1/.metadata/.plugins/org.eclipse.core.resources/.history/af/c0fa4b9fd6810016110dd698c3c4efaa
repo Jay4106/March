@@ -1,0 +1,21 @@
+package methods_example;
+
+public class Passing_Returnig {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+
+	sayHello("vijay");
+	sayHello("raj");
+		
+	}
+	
+		public static void sayHello(String name)
+		{
+			System.out.println("Hello"+name);
+		}
+	}
+
+

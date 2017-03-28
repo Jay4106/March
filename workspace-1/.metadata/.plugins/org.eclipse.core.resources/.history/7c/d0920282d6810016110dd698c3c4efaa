@@ -1,0 +1,13 @@
+package methods_example;
+
+public class Passing_Returnig {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

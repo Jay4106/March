@@ -1,0 +1,33 @@
+package diceSearch;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Chrome {
+
+	public static void main(String[] args) throws Throwable {
+		System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\Java\\chromeDriver\\chromedriver.exe");
+		WebDriver d = new ChromeDriver();
+		d.get("http://www.dice.com");
+		d.findElement(By.id("Login_1")).click();
+		d.findElement(By.id("Email_1")).sendKeys("vraj0852@gmail.com");
+		d.findElement(By.id("Password_1")).sendKeys("2348174947vj");
+		d.findElement(By.id("LoginBtn_1")).click();
+		Thread.sleep(2000);
+		d.navigate().refresh();
+		//d.findElement(By.id("close_DFP_btn")).click();
+		Thread.sleep(8000);
+		d.findElement(By.name("q")).sendKeys("QA Selenium Testng cucumber");
+		d.findElement(By.name("l")).clear();
+        d.findElement(By.xpath("//*[@id='searchJob']/div/div[3]/input")).click();
+        Thread.sleep(5000);
+        d.findElement(By.xpath("//*[@id='sort-by-date-link']")).click();
+        Thread.sleep(5000);
+        d.findElement(By.xpath("//*[@id='jobTypes']/div[1]/span")).click();
+        d.findElement(By.xpath("//*[@id='jobTypes']/div[4]/div/input")).click();
+        Thread.sleep(5000);
+        d.findElement(By.xpath("//*[@id='searchJob']/div/div[3]/input")).click();
+	}
+
+}

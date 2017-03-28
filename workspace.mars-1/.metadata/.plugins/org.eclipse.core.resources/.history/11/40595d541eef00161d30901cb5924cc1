@@ -1,0 +1,19 @@
+package verify;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Amazon {
+	
+	public void Page(){
+	
+	System.setProperty("webdriver.gecko.driver", "C:\\Program Files\\Java\\gecko\\geckodriver.exe");
+	WebDriver d= new FirefoxDriver();
+	d.get("http://www.google.com");
+	d.findElement(By.id("gs_htif0")).sendKeys("Amazon");
+	d.findElement(By.name("btnK")).click();
+	d.findElement(By.xpath(".//*[@id='rso']/div[1]/div/div/div/h3/a")).click();
+	
+	}
+}
