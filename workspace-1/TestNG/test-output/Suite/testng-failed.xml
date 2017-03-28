@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test3(failed)">
+    <parameter name="browser" value="ie"/>
+    <classes>
+      <class name="verify.CrossBrowser">
+        <methods>
+          <include name="page"/>
+          <include name="browserName"/>
+        </methods>
+      </class> <!-- verify.CrossBrowser -->
+    </classes>
+  </test> <!-- Test3(failed) -->
+</suite> <!-- Failed suite [Suite] -->
